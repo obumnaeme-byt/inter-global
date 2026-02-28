@@ -1,28 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inter Globsal Form</title>
-</head>
-<body>
-    <h2>Inter Globsal Form</h2>
-    <label>Full Name:</label><br>
-    <input type="text" name=""><br><br>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div><label>Full Name:</label> <input type="text" name="" /></div>
+        <div style="display: flex; gap: 9px;">
+          <label>Gender</label>
+          <input type="radio" name="Gender" value="Male" />M
+          <input type="radio" name="Gender" value="Female" />F
+        </div>
 
-    <label>Gender</label><br>
-    <input type="radio" name="Gender" value="Male">M
-    <input type="radio" name="Gender" value="Female">F<br><br>
+        <div><label>Email</label> <input type="email" name="email" /></div>
 
-    <label>Email</label>
-    <input type="email" name="email"><br><br>
+        <div>
+          <label>Date of Birth</label>
+          <input type="date" name="date of Birth" />
+        </div>
 
-    <label>Date of Birth</label>
-    <input type="date" name="date of Birth"><br><br>
-
-    <label>Pasword</label>
-    <input type="password" name=""><br><br>
-
-    
-</body>
+        <div><label>Pasword</label> <input type="password" name="" /></div>
+      </fieldset>
+    </form>
+  </body>
 </html>
